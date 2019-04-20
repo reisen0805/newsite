@@ -1,0 +1,56 @@
+@media print, screen and (min-width: 640px) {
+
+body {
+    font-family: Meiryo;
+    background-image: url(../files/budou.jpg);
+    background-size: cover;
+}
+
+div#wrapper {
+ width: auto;
+ height: auto;
+ text-align: left;
+}
+
+h3 {
+    background: #18b7e9;
+    text-align: center;
+}
+
+div#changelog {
+  text-align: center;
+}
+
+div#sentence {
+    background: #ffffff;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}
+
+.download {
+    text-align: center;
+}
+
+.img {
+    border: 10px ridge #cfcfcf;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 600px;
+}
+
+a:hover img.imglinksamp03 {
+    border: 10px ridge #9f9f9f;
+}
+
+div#count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

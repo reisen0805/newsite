@@ -1,0 +1,62 @@
+body {
+    font-family: Meiryo;
+    background-image: url(../index/b032.gif);
+}
+
+div#wrapper {
+ width: auto;
+ height: auto;
+ text-align: left;
+}
+
+h3 {
+    background: #18b7e9;
+    text-align: center;
+}
+
+#slideshow {
+   position: relative;
+   width:  1200px; /* ボックスの横幅 */
+   height: 600px; /* ボックスの高さ */
+}
+
+#slideshow p {
+   position: absolute;
+   top:  0;
+   left: 0;
+   z-index: 8;
+   opacity: 0.0;
+   margin: 0;
+   background-color: white; /* ボックスの背景色(必須) */
+   height: 300px; /* ボックスの高さ */
+}
+
+#slideshow p.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+
+#slideshow p.last-active {
+   z-index: 9;
+}
+
+#slideshow p img {
+   width:  1200px; /* 画像の横幅 */
+   height: 600px; /* 画像の高さ */
+   display: block;
+   border: 0;
+   margin-bottom: 10px; /* 画像下部の余白 */
+}
+
+.img {
+    border: 10px ridge #f0e68c;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 600px;
+}
+
+a:hover img.imglinksamp03 {
+    border: 10px ridge #ffd700;
+}

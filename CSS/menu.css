@@ -1,0 +1,7 @@
+div#menu{
+  background: #cfcfcf;
+}
+ul.menu li {
+  display: inline;
+  margin-right: 50px;
+}

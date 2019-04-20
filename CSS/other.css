@@ -1,0 +1,26 @@
+body {
+    background-image: url(../index/20150701074346.png);
+    font-family: Meiryo;
+}
+
+h3 {
+    background: #7fffd4;
+    text-align: center;
+}
+
+.otherimg {
+    border: 10px ridge #cfcfcf;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+}
+
+.link {
+    text-align: center;
+}
+
+div#move {
+    text-align: center;
+}

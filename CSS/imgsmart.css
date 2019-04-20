@@ -1,0 +1,65 @@
+@media print, screen and (max-width: 640px) {
+
+body {
+    font-family: Meiryo;
+    background-image: url(../files/blue.png);
+    background-size: cover;
+}
+
+div#wrapper {
+ width: auto;
+ height: auto;
+ text-align: left;
+}
+
+h3 {
+    background: #18b7e9;
+    width: 350px;
+    text-align: center;
+}
+
+div#changelog {
+  text-align: center;
+}
+
+div#sentence {
+    background: #ffffff;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}
+
+.download {
+    text-align: center;
+}
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    border: 10px ridge #cfcfcf;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+
+a:hover img.imglinksamp03 {
+    border: 10px ridge #9f9f9f;
+}
+
+div#count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    text-align: center;
+}
+
+}

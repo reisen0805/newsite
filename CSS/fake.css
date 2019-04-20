@@ -1,0 +1,18 @@
+body {
+    font-family: Meiryo;
+    background-image: url(../index/b032.gif);
+}
+
+h3 {
+    background: #eeeeee;
+    text-align: center;
+}
+
+p {
+    background: #ffffff;
+    width: 400px;
+    padding: : 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: Meiryo;
+    background-image: url(../index/b032.gif);
+}
+
+h3 {
+    background: #eeeeee;
+    text-align: center;
+}
+
+div#text {
+    background: #ffffff;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}
+
+.download {
+    background: #c5d4e6;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}

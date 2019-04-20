@@ -1,0 +1,13 @@
+body {
+    background-image: url(../index/20150701074346.png);
+    font-family: Meiryo;
+}
+
+div#fake {
+    background: #ffffff;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}
