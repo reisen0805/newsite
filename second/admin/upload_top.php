@@ -14,10 +14,10 @@ if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
             $new_name .= 'second.jpg';
             break;
         case IMAGETYPE_GIF:
-            $new_name .= '.gif';
+            $new_name .= 'second.jpg';
             break;
         case IMAGETYPE_PNG:
-            $new_name .= '.png';
+            $new_name .= 'second.jpg';
             break;
         default:
             header('Location: upload.php');

@@ -8,12 +8,23 @@
    <link href="../CSS/menu.css" rel="stylesheet" type="text/css">
   <title>一年生時間割変更</title>
  </head>
- <body>
+ <body onload="reloadCheck()">
+ <script type="text/javascript"><!--
+ function reloadCheck()
+ {
+	 if (window.name != "reloadFlag")
+		 {
+		 location.reload(true);
+		 window.name = "reloadFlag";
+		 }
+ }
+ // --></script>
   <h3>ここは一年生の時間割変更です。</h3>
   <div class="img">
         <img border="0" width="1200px" height="600px" src="../first/admin/upload/first.jpg" alt="一年生">
     </div><br>
     <div id="sentence">
+    <p>画像が更新されない場合は拡大(ダウンロード)を押下してください。</p>
     <p><a href="../first/admin/upload/first.jpg">拡大(ダウンロード)</a></p>
     <p>ID:first pass: ******</p>
     <p><a href="../index.html">トップページ</a></p>
