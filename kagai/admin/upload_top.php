@@ -11,13 +11,13 @@ if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
     }
     switch (exif_imagetype($_FILES['upfile']['tmp_name'])){
         case IMAGETYPE_JPEG:
-            $new_name .= 'third.jpg';
+            $new_name .= 'kagai.jpg';
             break;
         case IMAGETYPE_GIF:
-            $new_name .= 'third.jpg';
+            $new_name .= 'kagai.jpg';
             break;
         case IMAGETYPE_PNG:
-            $new_name .= 'third.jpg';
+            $new_name .= 'kagai.jpg';
             break;
         default:
             header('Location: upload.php');
@@ -39,9 +39,8 @@ if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
    <link href="../../CSS/imgpc.css" rel="stylesheet" type="text/css" media="(min-width: 640px)">
    <link href="../../CSS/imgsmart.css" rel="stylesheet" type="text/css" media="(max-width: 640px)">
    <link href="../../CSS/menu.css" rel="stylesheet" type="text/css">
-   <title>管理画面</title>
 </head>
-<h3>管理画面 ～三年生～</h3>
+<h3>管理画面 ～課外～</h3>
 <p><form action="upload_top.php" method="post" enctype="multipart/form-data">
 <input type="file" name="upfile">
 <input type="submit" value="アップロード" name="yomikomi">
@@ -52,4 +51,4 @@ if(isset($msg) && $msg == true){
     echo '<p>'. $msg . '</p>';
 }
 ?>
-<a href="../third.html">戻る</a>
+<a href="../kagai.html">戻る</a>

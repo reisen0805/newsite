@@ -6,8 +6,8 @@ $msg = null;
 if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
     $old_name = $_FILES['upfile']['tmp_name'];
     //  もしuploadというフォルダーがなければ
-    if(!file_exists('upload')){
-        mkdir('upload');
+    if(!file_exists('../../upload')){
+        mkdir('../../upload');
     }
     switch (exif_imagetype($_FILES['upfile']['tmp_name'])){
         case IMAGETYPE_JPEG:
@@ -24,9 +24,9 @@ if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
             exit();
     }
     //  もし一時的なファイル名の$_FILES['upfile']ファイルを
-    //  upload/basename($_FILES['upfile']['name'])ファイルに移動したら
+    //  ../../upload/basename($_FILES['upfile']['name'])ファイルに移動したら
     $gazou = basename($_FILES['upfile']['name']);
-    if(move_uploaded_file($old_name, 'upload/'.$new_name)){
+    if(move_uploaded_file($old_name, '../../upload/'.$new_name)){
         $msg = $gazou. 'のアップロードに成功しました';
     }else {
         $msg = 'アップロードに失敗しました';
@@ -39,6 +39,7 @@ if(isset($_FILES['upfile']) && is_uploaded_file($_FILES['upfile']['tmp_name'])){
    <link href="../../CSS/imgpc.css" rel="stylesheet" type="text/css" media="(min-width: 640px)">
    <link href="../../CSS/imgsmart.css" rel="stylesheet" type="text/css" media="(max-width: 640px)">
    <link href="../../CSS/menu.css" rel="stylesheet" type="text/css">
+   <title>管理画面</title>
 </head>
 <h3>管理画面 ～二年生～</h3>
 <p><form action="upload_top.php" method="post" enctype="multipart/form-data">
